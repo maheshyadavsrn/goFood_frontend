@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link ,useNavigate } from 'react-router-dom'
-const url="https://go-food-backend-olive.vercel.app"
+const url="https://gofoodappapihain.onrender.com"
+
 
 
 
