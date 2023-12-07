@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
-const url="https://go-food-backend-1597zm6dk-maheshs-projects-ed0ef9b2.vercel.app"
+const url="https://go-food-backend-olive.vercel.app"
+
 
 
 export const Home = () => {

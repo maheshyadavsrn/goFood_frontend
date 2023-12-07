@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link,useNavigate } from 'react-router-dom';
-const url="https://go-food-backend-1597zm6dk-maheshs-projects-ed0ef9b2.vercel.app"
+const url="https://go-food-backend-olive.vercel.app"
+
 
 
 const Login = () => {

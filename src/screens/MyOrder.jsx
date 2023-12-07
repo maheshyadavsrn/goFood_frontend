@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-const url="https://go-food-backend-1597zm6dk-maheshs-projects-ed0ef9b2.vercel.app"
+const url="https://go-food-backend-olive.vercel.app"
+
 
 
 export default function MyOrder() {
