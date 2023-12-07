@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link ,useNavigate } from 'react-router-dom'
+const url="https://go-food-backend-alpha.vercel.app"
 
 
 function Signup() {
@@ -15,7 +16,7 @@ function Signup() {
         password:credentials.password,
         location:credentials.geolocation 
       }));
-    const response= await fetch("http://localhost:5000/api/creatuser",{
+    const response= await fetch(`${url}/api/creatuser`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

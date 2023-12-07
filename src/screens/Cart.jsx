@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import { useCart, useDispatchCart } from '../components/ConextReducer';
+const url="https://go-food-backend-alpha.vercel.app"
 export default function Cart() {
   let data = useCart();
   let dispatch = useDispatchCart();
@@ -13,7 +14,7 @@ export default function Cart() {
    }
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("http://localhost:5000/api/orderData", {
+    let response = await fetch(`${url}/api/orderData`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

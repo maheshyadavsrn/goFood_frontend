@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+const url="https://go-food-backend-alpha.vercel.app"
 
 export default function MyOrder() {
     const [orderData, setOrderData] = useState([]);
 let newArray=[];
     const fetchMyOrder = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/myorderData", {
+            const response = await fetch(`${url}/api/myorderData`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
+const url="https://go-food-backend-alpha.vercel.app"
 
 export const Home = () => {
     const [search,setSearch]=useState('')
@@ -11,7 +12,7 @@ export const Home = () => {
 
     const loadData = async () => {
         try {
-            let response = await fetch("http://localhost:5000/api/foodData", {
+            let response = await fetch(`${url}/api/foodData`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
